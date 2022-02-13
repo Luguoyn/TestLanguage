@@ -3,4 +3,4 @@ project(TestLanguage)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TestLanguage main.cpp TestScan.cpp TestScan.h Data.cpp Data.h Util.cpp Util.h TestParse.cpp TestParse.h TestSemanticAnalysis.cpp TestSemanticAnalysis.h)
+add_executable(TestLanguage main.cpp TestScan.cpp TestScan.h Data.cpp Data.h Util.cpp Util.h TestParse.cpp TestParse.h TestSemanticAnalysis.cpp TestSemanticAnalysis.h TVM.h TVM.cpp)

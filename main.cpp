@@ -3,17 +3,20 @@
 #include "Util.h"
 #include "TestParse.h"
 #include "TestSemanticAnalysis.h"
+#include "TVM.h"
 
 using namespace std;
 
 int main() {
-    string readFileName = "../AAA.T";
-    string scanFileName = "../BBB.T";
-    string parseFileName = "../CCC.T";
-    string semanticAnalysisFileName = "../DDD.T";
+    string readFileName;
+    string scanFileName;
+    string parseFileName;
+    string semanticAnalysisFileName;
+
+    TVM tvm;
 
     string inputFileName;
-    string fileName = "";
+    string fileName;
 
     cout << "Please enter the file name:" << endl;
     cin >> inputFileName;
@@ -60,5 +63,8 @@ int main() {
     }
 
     node::delNode(root);
+
+    tvm.run(semanticAnalysisFileName);
+
     return 0;
 }

@@ -1,3 +1,6 @@
 *.doc
 cmake-build-debug
 .idea
+*.tsc
+*.tpa
+*.tat
