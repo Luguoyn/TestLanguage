@@ -1,4 +1,5 @@
 {
+    /*This file is a sample*/
     int n;
     int in;
     int sum;
